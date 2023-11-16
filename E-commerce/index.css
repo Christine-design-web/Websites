@@ -10,6 +10,7 @@
 
 body{
     font-family: sans-serif;
+    background-color: #b8a2a9;
 }
 
 h1{
@@ -18,8 +19,9 @@ h1{
 }
 
 h2{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    color: #aa2929;
 }
 
 h3{
@@ -120,8 +122,7 @@ margin: 20px 5px 10px 20px;
 }
 
 #home{
-    background-image: url(./assets/home\ 3.jpg);
-    width: 100%;
+    /* background-image: url(./assets/home.webp); */
     height: 100vh;
     background-size: cover;
     background-position-x: 90px;
@@ -130,18 +131,33 @@ margin: 20px 5px 10px 20px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-bottom: 10px;
 
+}
+
+.brand{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+#row{
+    padding: 5px;
 }
 #home span{
     color: orange;
+    padding-bottom: 10px;
 } 
 
 #New .one img{
-    width: 50%;
-    height: 50%;
+    /* width: 50%;
+    height: 50%; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: alternate-reverse;
+    transition: 0.4s ease;
+    /* opacity: 0.7; */
+    background: none;
+
 
 }
 
@@ -264,3 +280,49 @@ footer p:nth-child(2){
     bottom: 35px;
     font-size: 14px;
 }
+
+
+/* Style for the navigation bar */
+.navbar-collapse {
+    text-align: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-item {
+    list-style: none;
+    margin: 0;
+    padding-left: 5px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333; /* You can change the color */
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Change the color on hover */
+  }
+  
+  /* Style for the icons in the last list item */
+  .nav-item i {
+    margin-left: 10px; /* Adjust the spacing between icons */
+    color: #333; /* You can change the color */
+  }
+  
+  /* Style for active link */
+  .nav-link.active {
+    font-weight: bold; /* You can customize the active link style */
+  }
+  
+  /* Add some spacing to the top and bottom of the navbar */
+  .nav_buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
